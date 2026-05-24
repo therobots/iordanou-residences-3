@@ -1,0 +1,77 @@
+{
+  "name": "Property",
+  "type": "object",
+  "properties": {
+    "name_en": {
+      "type": "string",
+      "description": "Property name in English"
+    },
+    "name_el": {
+      "type": "string",
+      "description": "Property name in Greek"
+    },
+    "description_en": {
+      "type": "string",
+      "description": "Full description in English"
+    },
+    "description_el": {
+      "type": "string",
+      "description": "Full description in Greek"
+    },
+    "location": {
+      "type": "string",
+      "description": "Location/village name"
+    },
+    "amenities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of amenities"
+    },
+    "base_price_per_night": {
+      "type": "number",
+      "description": "Base price per night in EUR"
+    },
+    "max_guests": {
+      "type": "number",
+      "description": "Maximum number of guests"
+    },
+    "bedrooms": {
+      "type": "number"
+    },
+    "bathrooms": {
+      "type": "number"
+    },
+    "property_type_en": {
+      "type": "string",
+      "description": "Property type in English (e.g., Traditional Stonehouse)"
+    },
+    "property_type_el": {
+      "type": "string",
+      "description": "Property type in Greek"
+    },
+    "image_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of image URLs"
+    },
+    "ical_url": {
+      "type": "string",
+      "description": "External iCal URL for calendar sync"
+    },
+    "blocked_dates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of blocked date strings (YYYY-MM-DD)"
+    }
+  },
+  "required": [
+    "name_en",
+    "base_price_per_night"
+  ]
+}

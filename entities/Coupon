@@ -1,0 +1,28 @@
+{
+  "name": "Coupon",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Coupon code (e.g., WELCOME10)"
+    },
+    "discount_percentage": {
+      "type": "number",
+      "description": "Discount percentage"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the coupon is currently active"
+    },
+    "usage_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times used"
+    }
+  },
+  "required": [
+    "code",
+    "discount_percentage"
+  ]
+}

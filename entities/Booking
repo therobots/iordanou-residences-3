@@ -1,0 +1,67 @@
+{
+  "name": "Booking",
+  "type": "object",
+  "properties": {
+    "property_id": {
+      "type": "string",
+      "description": "Reference to the Property"
+    },
+    "property_name": {
+      "type": "string",
+      "description": "Property name for display"
+    },
+    "guest_name": {
+      "type": "string"
+    },
+    "guest_email": {
+      "type": "string"
+    },
+    "guest_phone": {
+      "type": "string"
+    },
+    "check_in_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "check_out_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "num_guests": {
+      "type": "number"
+    },
+    "num_nights": {
+      "type": "number"
+    },
+    "subtotal": {
+      "type": "number"
+    },
+    "discount_applied": {
+      "type": "number",
+      "description": "Total discount percentage applied"
+    },
+    "coupon_code": {
+      "type": "string"
+    },
+    "total_price": {
+      "type": "number"
+    },
+    "booking_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled"
+      ],
+      "default": "pending"
+    },
+    "special_requests": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "property_id",
+    "check_in_date",
+    "check_out_date"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Guidebook",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "residence",
+        "landmark",
+        "location"
+      ],
+      "description": "Type of guide entry"
+    },
+    "title_en": {
+      "type": "string",
+      "description": "Title in English"
+    },
+    "title_el": {
+      "type": "string",
+      "description": "Title in Greek"
+    },
+    "description_en": {
+      "type": "string",
+      "description": "Description in English"
+    },
+    "description_el": {
+      "type": "string",
+      "description": "Description in Greek"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Image URL"
+    },
+    "property_id": {
+      "type": "string",
+      "description": "Linked property ID (for residence category)"
+    }
+  },
+  "required": [
+    "category",
+    "title_en"
+  ]
+}
